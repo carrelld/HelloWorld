@@ -1,4 +1,4 @@
-package com.dagrca.design;
+package com.dagrca.design.factory;
 
 public class Main {
 
