@@ -1,12 +1,15 @@
 package com.dagrca.design.factory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 12:58 PM
+ * Purpose:
  */
-public class ShapeFactory {
+class ShapeFactory {
 
     // Use getShape method to get object of type shape
-    public Shape getShape(String shapeType) {
+    Shape getShape(String shapeType) {
         if (shapeType == null) {
             return null;
         }

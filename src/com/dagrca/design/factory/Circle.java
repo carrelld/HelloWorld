@@ -1,9 +1,12 @@
 package com.dagrca.design.factory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 12:58 PM
+ * Purpose:
  */
-public class Circle implements Shape {
+class Circle implements Shape {
 
     @Override
     public void draw() {

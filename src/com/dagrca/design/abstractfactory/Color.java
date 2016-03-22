@@ -1,8 +1,11 @@
 package com.dagrca.design.abstractfactory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 12:55 PM
+ * Purpose:
  */
-public interface Color {
+interface Color {
     void fill();
 }

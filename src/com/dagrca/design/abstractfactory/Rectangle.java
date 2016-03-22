@@ -1,9 +1,12 @@
 package com.dagrca.design.abstractfactory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 1:00 PM
+ * Purpose:
  */
-public class Rectangle implements Shape {
+class Rectangle implements Shape {
     @Override
     public void draw() {
         System.out.println("Inside Rectangle::draw() method");

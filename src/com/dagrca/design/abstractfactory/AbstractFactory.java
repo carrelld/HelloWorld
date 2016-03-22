@@ -1,9 +1,12 @@
 package com.dagrca.design.abstractfactory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 12:54 PM
+ * Purpose:
  */
-public abstract class AbstractFactory {
+abstract class AbstractFactory {
     abstract Color getColor(String color);
     abstract Shape getShape(String shape);
 }

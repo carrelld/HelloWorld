@@ -1,9 +1,12 @@
 package com.dagrca.design.abstractfactory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 1:00 PM
+ * Purpose:
  */
-public class ColorFactory extends AbstractFactory {
+class ColorFactory extends AbstractFactory {
     @Override
     Shape getShape(String shape) {
         return null;

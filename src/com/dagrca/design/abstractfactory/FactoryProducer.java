@@ -1,10 +1,13 @@
 package com.dagrca.design.abstractfactory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 1:00 PM
+ * Purpose:
  */
-public class FactoryProducer {
-    public static AbstractFactory getFactory(String choice) {
+class FactoryProducer {
+    static AbstractFactory getFactory(String choice) {
 
         if (choice.equalsIgnoreCase("SHAPE")) {
             return new ShapeFactory();

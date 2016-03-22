@@ -1,9 +1,12 @@
 package com.dagrca.design.factory;
 
 /**
- * Created by carrelld on 3/21/2016.
+ * User: carrelld
+ * Date: 3/21/2016
+ * Time: 12:57 PM
+ * Purpose:
  */
-public class Square implements Shape {
+class Square implements Shape {
     @Override
     public void draw() {
         System.out.println("Inside Square::draw() method");
