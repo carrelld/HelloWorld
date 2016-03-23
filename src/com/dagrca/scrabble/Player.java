@@ -1,5 +1,7 @@
 package com.dagrca.scrabble;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -11,7 +13,7 @@ import java.util.List;
 public class Player {
     private String name;
     private int score = 0;
-    private List<Character> tiles = null;
+    private List<Character> tiles = new ArrayList<Character>();
 
     public Player(String name) {
         this.name = name;
@@ -37,12 +39,21 @@ public class Player {
         return tiles;
     }
 
-    public void setTiles(List tiles) {
-        this.tiles = tiles;
+    public void addTiles(List tiles) {
+        this.tiles.addAll(tiles);
     }
 
-    public Character removeTile(Character c) {
-        int index = this.tiles.indexOf(c);
-        return this.tiles.remove(index);
+    public boolean removeTiles(String s) {
+        // TO-DO add remove tiles code by looping through string s
+        for (Character ch : s.toCharArray()) {
+            if (!removeTile(ch)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean removeTile(Character c) {
+        return this.tiles.remove(c);
     }
 }
