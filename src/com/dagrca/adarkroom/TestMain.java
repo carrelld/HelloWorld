@@ -1,5 +1,7 @@
 package com.dagrca.adarkroom;
 
+import java.util.Scanner;
+
 /**
  * User: dave
  * Date: 3/23/2016
@@ -8,8 +10,15 @@ package com.dagrca.adarkroom;
  */
 public class TestMain {
     public static void main(String[] args) {
-        Fire fire = new Fire();
-        Thread burn = new Thread(fire);
-        burn.start();
+        Timer timer = new Timer("Test");
+        Thread t_timer = new Thread(timer);
+        t_timer.start();
+
+        String a = "";
+        while (!a.equalsIgnoreCase("END")) {
+            Scanner in = new Scanner(System.in);
+            a = in.nextLine();
+            System.out.println(a);
+        }
     }
 }

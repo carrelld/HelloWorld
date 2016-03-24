@@ -7,19 +7,31 @@ package com.dagrca.adarkroom;
  * Purpose:
  */
 public abstract class TimedAction {
+    private String name;
     private int waitTime;
     private int remainingTime;
-    private boolean ready;
 
-    public void decayTime() {
+    public void countdown() {
         while (remainingTime > 0) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            remainingTime -= 1;
+            System.out.println(remainingTime--);
         }
+    }
+
+    public void reset() {
+        remainingTime = waitTime;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getWaitTime() {
@@ -36,13 +48,5 @@ public abstract class TimedAction {
 
     public void setRemainingTime(int remainingTime) {
         this.remainingTime = remainingTime;
-    }
-
-    public boolean isReady() {
-        return ready;
-    }
-
-    public void setReady(boolean ready) {
-        this.ready = ready;
     }
 }
