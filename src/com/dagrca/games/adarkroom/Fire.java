@@ -1,4 +1,4 @@
-package com.dagrca.adarkroom;
+package com.dagrca.games.adarkroom;
 
 /**
  * User: dave

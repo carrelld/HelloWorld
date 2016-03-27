@@ -1,6 +1,4 @@
-package com.dagrca.scrabble;
-
-import java.util.List;
+package com.dagrca.games.scrabble;
 
 /**
  * User: carrelld

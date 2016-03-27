@@ -1,4 +1,4 @@
-package com.dagrca.scrabble;
+package com.dagrca.games.scrabble;
 
 import javax.swing.*;
 import java.awt.*;

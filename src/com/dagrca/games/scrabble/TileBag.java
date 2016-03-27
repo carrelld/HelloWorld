@@ -1,4 +1,4 @@
-package com.dagrca.scrabble;
+package com.dagrca.games.scrabble;
 
 import java.util.Arrays;
 import java.util.Collections;
