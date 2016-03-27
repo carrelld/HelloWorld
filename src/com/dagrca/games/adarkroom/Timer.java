@@ -6,16 +6,17 @@ package com.dagrca.games.adarkroom;
  * Time: 9:59 PM
  * Purpose:
  */
-public class Fire extends TimedAction implements Runnable{
+public class Timer extends TimedAction implements Runnable{
 
-    public Fire() {
-        this.setWaitTime(10);
+    public Timer(String name) {
+        this.setName(name);
+        this.setWaitTime(11);
         this.setRemainingTime(this.getWaitTime());
     }
 
     @Override
     public void run() {
-        this.decayTime();
-        this.setReady(true);
+        this.countdown();
+        this.reset();
     }
 }
